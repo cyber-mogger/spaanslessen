@@ -57,6 +57,12 @@ h3{font-family:'Space Grotesk',sans-serif;font-size:1.3rem;color:var(--primary)}
 .card:hover{transform:translateY(-10px);border-color:var(--accent);box-shadow:0 12px 30px rgba(0,0,0,0.1)}
 .card h3{color:var(--primary);margin-bottom:1rem}
 .card p{color:var(--muted);line-height:1.6}
+.price-list{list-style:none;padding:0;margin:2rem 0 0;display:grid;gap:1rem}
+.price-list li{background:var(--surface);padding:1.5rem 1.75rem;border-radius:16px;border:1px solid rgba(107,68,35,0.12);box-shadow:0 6px 18px rgba(0,0,0,0.04)}
+.price-row{display:flex;justify-content:space-between;gap:1rem;align-items:flex-start;flex-wrap:wrap}
+.price-row strong{font-size:1.05rem;color:var(--primary)}
+.price-row span{color:var(--accent);font-weight:700;white-space:nowrap}
+.price-list li p{margin:0.75rem 0 0;color:var(--muted);line-height:1.75}
 .contact{padding:4rem 0}
 .contact-box{background:var(--surface);border-radius:16px;padding:3rem;box-shadow:0 10px 30px rgba(0,0,0,0.06);border:1px solid rgba(107,68,35,0.1)}
 .contact-box h2{margin-top:0;color:var(--primary)}
