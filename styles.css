@@ -11,12 +11,17 @@
 body{margin:0;font-family:'Nunito',sans-serif;background:radial-gradient(circle at top left, rgba(167,44,44,0.08), transparent 28%), linear-gradient(180deg,#fff,#f9f4ee);color:var(--text)}
 img,svg{max-width:100%;height:auto}
 .container{max-width:1080px;margin:0 auto;padding:1.25rem}
+.skip-link{position:absolute;top:-4rem;left:1rem;background:var(--secondary);color:#fff;padding:.6rem 1.2rem;border-radius:0 0 10px 10px;font-weight:700;text-decoration:none;z-index:200;transition:top .15s ease}
+.skip-link:focus{top:0}
 .site-header{position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);border-bottom:1px solid rgba(167,44,44,0.08)}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem}
-.logo{font-family:'Montserrat',sans-serif;font-size:1.2rem;font-weight:700;color:var(--primary)}
+.logo{font-family:'Montserrat',sans-serif;font-size:1.2rem;font-weight:700;color:var(--primary);text-decoration:none;display:flex;align-items:center;gap:0.6rem}
 .logo span{color:var(--secondary)}
+.logo-img{height:40px;width:auto;border-radius:8px;flex-shrink:0}
 .nav{display:flex;flex-wrap:wrap;align-items:center;gap:0.75rem}
 .nav a{color:var(--text);text-decoration:none;font-weight:600}
+.nav a[aria-current="page"]{color:var(--primary);border-bottom:2px solid var(--primary);padding-bottom:1px}
+.nav a:focus-visible,.btn:focus-visible{outline:3px solid var(--secondary);outline-offset:3px;border-radius:6px}
 .hero{padding:4rem 0}
 .hero-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:2rem;align-items:center}
 .eyebrow{display:inline-block;padding:.25rem .75rem;border-radius:999px;background:rgba(45,62,150,0.1);color:var(--secondary);font-size:.89rem;margin-bottom:1rem}
@@ -47,6 +52,11 @@ form label{display:grid;font-weight:600;color:var(--text)}
 input,textarea,select{width:100%;padding:0.95rem 1rem;border:1px solid rgba(45,62,150,0.12);border-radius:16px;background:#fff;color:var(--text);font:inherit}
 input:focus,textarea:focus,select:focus{outline:none;box-shadow:0 0 0 4px rgba(45,62,150,0.1);border-color:var(--secondary)}
 .site-footer{padding:1.75rem 0;background:linear-gradient(180deg,rgba(45,62,150,0.08),transparent);border-top:1px solid rgba(167,44,44,0.1)}
-.footer-grid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
+.footer-grid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;align-items:center}
+.footer-social a{display:inline-flex;align-items:center;gap:.4rem;color:var(--secondary);font-weight:600;text-decoration:none}
+.footer-social a:hover{text-decoration:underline}
+.footer-social a:focus-visible{outline:3px solid var(--secondary);outline-offset:3px;border-radius:4px}
+.price-list{padding-left:1.25rem;display:grid;gap:.75rem;color:var(--text)}
+.price-list li{line-height:1.6}
 @media(max-width:900px){.hero-grid, .info-grid{grid-template-columns:1fr}.nav{justify-content:flex-end}.hero{padding:3rem 0}}
 @media(max-width:620px){.header-inner{flex-direction:column;align-items:flex-start}.hero-buttons{flex-direction:column}.footer-grid{flex-direction:column}}
