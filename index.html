@@ -26,38 +26,38 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-text">
-          <p class="eyebrow">Spaans leren, zonder poeha</p>
-          <h1>Speelse Spaanse lessen in Roermond</h1>
-          <p class="lead">Voor pensionadas, reizigers en iedereen die graag stap voor stap zelfvertrouwen opbouwt. Online of op locatie. Nu met sfeer uit je logo.</p>
+          <p class="eyebrow">Professionele Spaanse lessen</p>
+          <h1>Spaans leren in Roermond</h1>
+          <p class="lead">Gerichte lessen voor volwassenen die echt vooruitgang willen. Online of op locatie. Nederlands of Engels als instructietaal.</p>
           <div class="hero-buttons">
-            <a href="#contact" class="btn btn-primary">Plan een proefles</a>
+            <a href="#contact" class="btn btn-primary">Vraag een kennismaking aan</a>
             <a href="courses.html" class="btn btn-secondary">Bekijk cursussen</a>
           </div>
         </div>
         <div class="hero-card card-accent">
-          <p class="card-label">Logo-kleuren</p>
-          <p>Wijnrood en spaans blauw maken de site warm en herkenbaar. Perfect voor jouw huisstijl.</p>
+          <p class="card-label">Herkenbare huisstijl</p>
+          <p>Je logo-kleuren #A72C2C en #2D3E96 komen terug in de vormgeving voor een professioneel en herkenbaar resultaat.</p>
         </div>
       </div>
     </section>
 
     <section class="container info-grid section-accent">
       <div>
-        <h2>Waarom deze lessen?</h2>
-        <p>Laagdrempelig, modern en toch met Spaanse sfeer. Je krijgt korte, vrolijke lessen met veel aandacht voor spreken en reizen.</p>
+        <h2>Wat u kunt verwachten</h2>
+        <p>Een professionele, doelgerichte aanpak met focus op praktisch gebruik en duidelijke voortgang.</p>
       </div>
       <div class="feature-list">
         <article class="feature-card">
-          <h3>Speels & vriendelijk</h3>
-          <p>Hoewel het modern oogt, blijft de lesopbouw toegankelijk voor iedereen.</p>
+          <h3>Professionele begeleiding</h3>
+          <p>Rustig tempo, heldere uitleg en aandacht voor uw persoonlijke leerdoelen.</p>
         </article>
         <article class="feature-card">
           <h3>Online & op locatie</h3>
-          <p>Kies wat bij je past: via beeldscherm of bij je thuis in Roermond.</p>
+          <p>Kies de vorm die bij uw planning past: online of in Roermond.</p>
         </article>
         <article class="feature-card">
-          <h3>Nederlands/Engels naar Spaans</h3>
-          <p>Ik spreek jouw taal — zodat je Spaans leert zonder stress.</p>
+          <h3>Persoonlijke start</h3>
+          <p>Begin met een kennismakingsgesprek in plaats van een proefles, zodat we uw doel helder stellen.</p>
         </article>
       </div>
     </section>
@@ -83,13 +83,14 @@
     <section class="container contact" id="contact">
       <div class="contact-box">
         <h2>Boek een gratis proefles</h2>
-        <p>Stuur een berichtje of vul dit korte formulier in. Ik reageer snel met een voorstel.</p>
-        <form>
-          <label>Naam<input type="text" placeholder="Jouw naam" required></label>
-          <label>E-mail<input type="email" placeholder="naam@mail.nl" required></label>
-          <label>Voorkeursles<select><option>Online</option><option>Op locatie (Roermond)</option></select></label>
-          <label>Bericht<textarea rows="4" placeholder="Waar wil je mee beginnen?"></textarea></label>
-          <button type="submit" class="btn btn-primary">Verstuur bericht</button>
+        <p>Vul uw gegevens in en ik neem binnen 24 uur contact met u op voor een passend voorstel.</p>
+        <form name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact">
+          <label>Naam<input type="text" name="naam" placeholder="Uw naam" required></label>
+          <label>E-mail<input type="email" name="email" placeholder="naam@mail.nl" required></label>
+          <label>Voorkeursles<select name="voorkeursles"><option>Online</option><option>Op locatie (Roermond)</option></select></label>
+          <label>Bericht<textarea name="bericht" rows="4" placeholder="Wat zijn uw leerwensen?"></textarea></label>
+          <button type="submit" class="btn btn-primary">Vraag proefles aan</button>
         </form>
       </div>
     </section>
